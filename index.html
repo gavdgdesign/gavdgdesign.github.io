@@ -131,28 +131,28 @@
               'paint': {
                 'circle-radius': [
                                   "interpolate", ["linear"], ["zoom"],
-                                  0, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "InvestmentAmount"], 1700000], 
+                                  0, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "Amount"], 1700000], 
                                             1700000, 3, 
                                             2501275000, 9, 
                                             5000850000, 12, 
                                             7500425000, 15, 
                                             10000000000, 21], 
                                       1],
-                                  5, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "InvestmentAmount"], 1700000], 
+                                  5, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "Amount"], 1700000], 
                                             1700000, 3, 
                                             2501275000, 9, 
                                             5000850000, 12, 
                                             7500425000, 15, 
                                             10000000000, 21], 
                                       1.1],
-                                  10, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "InvestmentAmount"], 1700000], 
+                                  10, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "Amount"], 1700000], 
                                              1700000, 3, 
                                              2501275000, 9, 
                                              5000850000, 12, 
                                              7500425000, 15, 
                                              10000000000, 21], 
                                        1.4],
-                                  22, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "InvestmentAmount"], 1700000], 
+                                  22, ["*", ["interpolate", ["exponential", 1], ['number', ["get", "Amount"], 1700000], 
                                              1700000, 3, 
                                              2501275000, 9, 
                                              5000850000, 12, 
@@ -189,7 +189,7 @@
               //set popup text
               //You can adjust the values of the popup to match the headers of your CSV.
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
-              var description = `<h3>` + e.features[0].properties.Company + `</h3>` + `<h4>` + `<b>` + `Type: ` + `</b>` + e.features[0].properties.Type + `</h4>` + `<h4>` + `<b>` + `Investment Amount: ` + `</b>` + e.features[0].properties.InvestmentLanguage + `</h4>`;
+              var description = `<h3>` + e.features[0].properties.Company + `</h3>` + `<h4>` + `<b>` + `Type: ` + `</b>` + e.features[0].properties.Type + `</h4>` + `<h4>` + `<b>` + `Investment Amount: ` + `</b>` + e.features[0].properties.Language + `</h4>`;
 
               // Ensure that if the map is zoomed out such that multiple
               // copies of the feature are visible, the popup appears
