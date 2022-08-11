@@ -37,17 +37,7 @@
       font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
       padding: 0;
       width: 250px;
-    }
-
-    .mapboxgl-popup-content-wrapper {
-      padding: 1%;
-    }
-
-    .mapboxgl-popup-content h3 {
-      background: rgb(61, 59, 59);
-      text-align: center;
-      color: #fff;
-      border-color: [
+      border: [
             "match",
             ["get", "Type"],
               ["Minerals"],
@@ -64,6 +54,16 @@
                 "#000000",
                "#a8a8a8"
         ];
+    }
+
+    .mapboxgl-popup-content-wrapper {
+      padding: 1%;
+    }
+
+    .mapboxgl-popup-content h3 {
+      background: rgb(61, 59, 59);
+      text-align: center;
+      color: #fff;
       margin: 0;
       display: block;
       padding: 15px;
