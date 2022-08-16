@@ -27,23 +27,6 @@
 
     .mapboxgl-popup {
       padding-bottom: 5px;
-      border: [
-            "match",
-            ["get", "Type"],
-              ["Minerals"],
-                "#b21fc8",
-              ["Recycling"],
-                "#71e5f5",
-              ["Battery Production"],
-                "#f4e158",
-              ["Charging"],
-                "#00d41e",
-              ["OEM"],
-                "#679bfa",
-              ["Utility"],
-                "#000000",
-               "#a8a8a8"
-        ];
     }
 
     .mapboxgl-popup-close-button {
@@ -230,7 +213,7 @@
 
               //add Popup to map
 
-              new mapboxgl.Popup()
+              new mapboxgl.Popup({className: "Type")
                 .setLngLat(coordinates)
                 .setHTML(description)
                 .addTo(map);
